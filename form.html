@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login Form</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #fce4ec, #e8eaf6, #e0f7fa);
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-container {
+            width: 380px;
+            background: rgba(255, 255, 255, 0.92);
+            padding: 35px;
+            border-radius: 20px;
+
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            text-align: center;
+            color: #6a4c93;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #777;
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 7px;
+            color: #4a4a4a;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 13px;
+            margin-bottom: 20px;
+
+            border: 1px solid #d8cce8;
+            border-radius: 10px;
+
+            outline: none;
+            font-size: 14px;
+            background-color: #faf8ff;
+        }
+
+        input:focus {
+            border-color: #9b72cf;
+            box-shadow: 0 0 6px rgba(155, 114, 207, 0.3);
+        }
+
+        .remember {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 22px;
+        }
+
+        .remember label {
+            font-weight: normal;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .remember input {
+            width: auto;
+            margin: 0 5px 0 0;
+        }
+
+        .forgot {
+            color: #8e6bbf;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .forgot:hover {
+            text-decoration: underline;
+        }
+
+        button {
+            width: 100%;
+            padding: 13px;
+
+            border: none;
+            border-radius: 10px;
+
+            background: linear-gradient(90deg, #8e6bbf, #c084b8);
+            color: white;
+
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: linear-gradient(90deg, #7655a5, #a85d99);
+        }
+
+        .signup {
+            text-align: center;
+            margin-top: 22px;
+            color: #777;
+            font-size: 14px;
+        }
+
+        .signup a {
+            color: #8e6bbf;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .signup a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="login-container">
+
+        <h1>Welcome Back ✨</h1>
+
+        <p class="subtitle">Login to your account</p>
+
+        <form>
+
+            <label for="email">Email</label>
+
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+
+            <input type="password" id="password" placeholder="Enter your password" required>
+
+            <div class="remember">
+
+                <label>
+                    <input type="checkbox">
+                    Remember me
+                </label>
+
+                <a href="#" class="forgot">Forgot Password?</a>
+
+            </div>
+
+            <button type="submit">Login</button>
+
+        </form>
+
+        <p class="signup">
+            Don't have an account?
+            <a href="register.html">Sign Up</a>
+        </p>
+
+    </div>
+
+</body>
+
+</html>
